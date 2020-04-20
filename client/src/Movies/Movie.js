@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import axios from 'axios';
 
 const Movie = (props) => {
-  console.log(props)
   const [movie, setMovie] = useState();
  const  { id }= useParams()
 //  console.log(id)
